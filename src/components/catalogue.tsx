@@ -40,6 +40,7 @@ function Preview({ item }: { item: CatalogueItem }) {
         src={preview.url}
         poster={preview.poster}
         label={`Preview of ${item.title}`}
+        fullHref={item.fanslyPost}
       />
     );
   }

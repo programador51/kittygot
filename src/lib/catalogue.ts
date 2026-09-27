@@ -89,7 +89,7 @@ function toPreview(file: BaserowFile | undefined, base: string): PreviewMedia | 
   const poster = bestThumbnail(file, base);
 
   if (file.is_image || mime.startsWith("image/")) {
-    return { url: poster ?? url, kind: "image", name, poster: null };
+    return { url, kind: "image", name, poster: null };
   }
   if (mime.startsWith("video/")) {
     return { url, kind: "video", name, poster };
